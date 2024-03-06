@@ -7,10 +7,10 @@
   /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: hsl(220, 68%, 54%);
   --first-color-lighten: hsl(220, 68%, 97%);
-  --title-color: hsl(0, 0%, 0%);
+  --title-color: hsl(0, 0%, 100%);
   --text-color: hsl(220, 12%, 45%);
   --body-color: hsl(0, 0%, 100%);
-  --nav-color: hsl(0, 0%, 100%);
+  --nav-color: hsl(0, 0%, 0%);
   --icon-background: hsl(47.805, 100%, 52%);
 
   /*========== Font and typography ==========*/
@@ -56,6 +56,9 @@ body {
   text-decoration: none;
 }
 
+.iconoFirstClass{
+  width: 3.5rem;
+}
 /*=============== REUSABLE ¿CSS CLASSES ===============*/
 .container {
   max-width: 1120px;
@@ -64,17 +67,18 @@ body {
 
 /*=============== HEADER ===============*/
 .header {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
   box-shadow: 0 2px 8px hsla(220, 68%, 12%, 0.1);
-  background-color: var(--nav-color);
+  background-color: rgba(0, 0, 0, 0.9);
+
   z-index: var(--z-fixed);
   font-size: 14px;
 }
 .logoHangar1{
-  width: 80%;
+  width: 30%;
 }
 
 
@@ -154,6 +158,17 @@ body {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
   padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.nav__linkFirstClass {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  padding: 1.25rem 1.5rem;
+  width: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
