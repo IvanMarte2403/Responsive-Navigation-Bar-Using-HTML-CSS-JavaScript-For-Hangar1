@@ -35,11 +35,11 @@
 }
 
 /*=============== BASE ===============*/
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
 
 body {
   font-family: var(--body-font);
@@ -72,16 +72,18 @@ body {
   left: 0;
   width: 100%;
   box-shadow: 0 2px 8px hsla(220, 68%, 12%, 0.1);
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0);
 
   z-index: var(--z-fixed);
-  font-size: 14px;
+  font-size: 11px;
 }
 .logoHangar1{
   width: 30%;
 }
 
-
+.carrito{
+  font-size: 1.5rem;
+}
 
 /*=============== NAV ===============*/
 .nav {
@@ -146,12 +148,20 @@ body {
     width: 100%;
   }
 
+  .logoHangar1{
+    width: 10%;
+  }
+
 }
   .nav__menu::-webkit-scrollbar {
     width: 0.5rem;
   }
   .nav__menu::-webkit-scrollbar-thumb {
     background-color: hsl(220, 12%, 70%);
+  }
+
+  .nav__link{
+    color: #000 !important;
   }
 }
 .nav__link {
