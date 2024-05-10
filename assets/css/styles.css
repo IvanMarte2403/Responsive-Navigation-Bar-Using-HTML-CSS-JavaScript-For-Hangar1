@@ -210,6 +210,10 @@ body {
 .dropdown__button {
   cursor: pointer;
 }
+
+.dropdown__title{
+  color: #000 !important;
+}
 .dropdown__item {
   margin: 0;
   padding: 0;
